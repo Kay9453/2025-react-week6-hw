@@ -4,8 +4,8 @@ import { Modal } from "bootstrap";
 import { useForm } from "react-hook-form";
 import ReactLoading from 'react-loading';
 import Swal from 'sweetalert2';
-import Toast from "../components/Toast";
-import FormatNumber from "../utils/FormatNumber";
+import Toast from "../../components/Toast";
+import FormatNumber from "../../utils/FormatNumber";
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 const API_PATH = import.meta.env.VITE_API_PATH;
@@ -132,7 +132,7 @@ export default function CartPage(){
     }
 
     return(
-        <>
+        <div className="container">
             {cart.carts?.length > 0 ? (<div>
                 <div className="text-end py-3">
                     <button className="btn btn-outline-danger" onClick={removeCart} type="button">
@@ -326,6 +326,6 @@ export default function CartPage(){
                     <ReactLoading type="spin" color="black" width="4rem" height="4rem" />
                 </div>
             }
-        </>
+        </div>
     )
 }

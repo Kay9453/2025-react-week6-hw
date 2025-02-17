@@ -35,18 +35,18 @@ export default function AdminLogin(){
     
         //   getProducts();
         //   setIsAuth(true);
-          navigate('/admin');
-        } catch (error) {
-          alert("登入失敗");
-        }
+      } catch (error) {
+        alert("登入失敗");
+      }
     }
     
     const checkUserLogin = async ()=>{
-        try {
-          await axios.post(`${BASE_URL}/v2/api/user/check`);
-            // getProducts();
-            // setIsAuth(true);
-            console.log('驗證成功！');
+      try {
+        await axios.post(`${BASE_URL}/v2/api/user/check`);
+        // getProducts();
+        // setIsAuth(true);
+        console.log('驗證成功！');
+        navigate('/admin');
         } catch (error) {
           console.error(error);
         }

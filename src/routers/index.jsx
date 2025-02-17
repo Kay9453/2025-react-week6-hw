@@ -1,14 +1,14 @@
 import { createHashRouter } from "react-router-dom";
 import FrontLayout from "../layouts/FrontLayout";
-import HomePage from "../pages/HomePage";
-import ProductsPage from "../pages/ProductsPage";
-import CartPage from "../pages/CartPage";
+import HomePage from "../pages/front/HomePage";
+import ProductsPage from "../pages/front/ProductsPage";
+import CartPage from "../pages/front/CartPage";
 import AdminLayout from "../layouts/AdminLayout";
 import AdminOrders from "../pages/admin/AdminOrders";
 import AdminProducts from "../pages/admin/AdminProducts";
 import AdminLogin from "../pages/AdminLogin";
-import NotFound from "../pages/NotFound";
-import ProductDetailPage from "../pages/ProductDetailPage";
+import NotFound from "../pages/front/NotFound";
+import ProductDetailPage from "../pages/front/ProductDetailPage";
 
 const routes = [
     {

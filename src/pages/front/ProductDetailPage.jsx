@@ -4,8 +4,8 @@ import { Modal } from "bootstrap";
 import { useForm } from "react-hook-form";
 import ReactLoading from 'react-loading';
 import Swal from 'sweetalert2';
-import Toast from "../components/Toast";
-import FormatNumber from "../utils/FormatNumber";
+import Toast from "../../components/Toast";
+import FormatNumber from "../../utils/FormatNumber";
 import { useParams } from "react-router-dom";
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;

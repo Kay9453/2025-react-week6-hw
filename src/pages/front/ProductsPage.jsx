@@ -5,8 +5,8 @@ import axios from "axios";
 // import { useForm } from "react-hook-form";
 import ReactLoading from 'react-loading';
 // import Swal from 'sweetalert2';
-import Toast from "../components/Toast";
-import FormatNumber from "../utils/FormatNumber";
+import Toast from "../../components/Toast";
+import FormatNumber from "../../utils/FormatNumber";
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 const API_PATH = import.meta.env.VITE_API_PATH;
