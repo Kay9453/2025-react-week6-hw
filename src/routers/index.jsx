@@ -30,13 +30,14 @@ const routes = [
             {
                 path: 'cart',
                 element: <CartPage />
-            },
-            {
-                path: 'adminLogin',
-                element: <AdminLogin />
             }
         ]
-    },{
+    },
+    {
+        path: '/adminLogin',
+        element: <AdminLogin />
+    },
+    {
         path: '/admin',
         element: <AdminLayout />,
         children: [

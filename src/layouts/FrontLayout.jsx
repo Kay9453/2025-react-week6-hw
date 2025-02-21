@@ -6,6 +6,7 @@ export default function FrontLayout(){
         { path: "/", name: "首頁" },
         { path: "/products", name: "產品列表" },
         { path: "/cart", name: "購物車" },
+        { path: "/adminLogin", name: "後台登入" }
     ];
 
 
@@ -23,9 +24,9 @@ export default function FrontLayout(){
                                 )
                             })
                         }
-                        <li>
+                        {/* <li>
                             <NavLink to='/adminLogin' className="nav-link" aria-current="page">後台登入</NavLink>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </nav>
